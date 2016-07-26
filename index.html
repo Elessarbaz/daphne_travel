@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daphne Travel | Главная</title>
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/components/sticky.min.css">
+  <link rel="stylesheet" href="css/components/slider.min.css">
+  <link rel="stylesheet" href="css/components/slidenav.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header id="home">
+  <div class="uk-container uk-container-center">
+    <a href="index.html"><img src="img/logo.png" alt="Лого" class="header__logo"></a>
+    <p class="language-switcher">
+      <a href="" class="active">RU</a>
+      <a href="">EN</a>
+      <a href="">TR</a>
+    </p>
+    <div class="navbar-and-contacts-col">
+      <div class="contacts">
+        <span><a href="tel:+7 727 291 71 71">+7 727 291 71 71</a></span>
+        <span><a href="tel:+ 7 701 768 10 95">+ 7 701 768 10 95</a></span>
+        <span><a href="mailto:daphne@daphne.kz">daphne@daphne.kz</a></span>
+        <span><a href="mailto:bilet@daphne.kz">bilet@daphne.kz</a></span>
+      </div>
+
+      <nav class="uk-navbar"
+           data-uk-sticky="{getWidthFrom:'.main-section', top:-200, animation: 'uk-animation-slide-top'}">
+        <ul class="uk-navbar-nav uk-hidden-small">
+          <li class="uk-active"><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="online-booking.html">Онлайн бронирование</a></li>
+          <li><a href="promotions.html">Спецпредложения</a></li>
+          <li><a href="visas.html">Визы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <a href="#my-id" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+      </nav>
+
+      <div id="my-id" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-offcanvas" data-uk-scrollspy-nav="{closest:'li', topoffset:-200}">
+            <li class="uk-active"><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="online-booking.html">Онлайн бронирование</a></li>
+            <li><a href="promotions.html">Спецпредложения</a></li>
+            <li><a href="visas.html">Визы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!--НАЧАЛО main-section-->
+<div class="main-section" style="background-image: url('img/main-background-4.jpg')">
+  <div class="content-area">
+    <img class="heading-img" src="img/icon-plane.png">
+    <h2>Мы работаем индивидуально с каждым клиентом!</h2>
+    <p>Рассматриваем все заданные вопросы, приводим наиболее удобные варианты, чтобы их желания совпадали с реальностью</p>
+  </div>
+</div>
+<!--КОНЕЦ main-section-->
+
+<!--НАЧАЛО advantages-->
+<div class="advantages">
+  <div class="uk-container uk-container-center">
+    <h2>Наши приемущества</h2>
+    <img class="heading-img" src="img/icon-photocamera.png">
+    <div class="data-uk-slider uk-slidenav-position" data-uk-slider="{autoplay: true}">
+      <div class="uk-slider-container">
+        <ul class="uk-slider uk-grid uk-grid-large uk-grid-width-large-1-4 uk-grid-width-medium-1-2 uk-grid-width-1-1">
+          <li>
+            <div>
+              <img src="img/advantages-plane-maletas.png">
+              <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="img/advantages-little-plane.png">
+              <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="img/advantages-lighthouse.png">
+              <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+              <p>
+                LLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="img/advantages-bicycle.png">
+              <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slider-item="previous"></a>
+      <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slider-item="next"></a>
+    </div>
+  </div>
+</div>
+<!--КОНЕЦ advantages-->
+
+<!--НАЧАЛО about-->
+<div class="about uk-container uk-container-center">
+  <h2>О компании</h2>
+  <img class="heading-img" src="img/icon-photos.png">
+  <div class="uk-grid">
+    <div class="uk-width-medium-1-3">
+      <img src="img/about-maletas.png">
+    </div>
+    <div class="uk-width-medium-2-3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.<br><br>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+    </div>
+  </div>
+</div>
+<!--КОНЕЦ about-->
+
+<!--НАЧАЛО promotions-->
+<div class="promotions">
+  <div class="uk-container uk-container-center">
+    <div class="content-box">
+      <h2>Спецпредложение</h2>
+      <img class="heading-img" src="img/icon-maleta.png">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+      <a href="#" class="btn">Подробнее</a>
+    </div>
+  </div>
+</div>
+<!--КОНЕЦ promotions-->
+
+<!--НАЧАЛО reviews-->
+<div class="reviews">
+  <div class="uk-container uk-container-center">
+    <h2>Отзывы</h2>
+    <img class="heading-img" src="img/icon-glasses.png">
+    <div class="data-uk-slider uk-slidenav-position" data-uk-slider="{autoplay: true}">
+      <div class="uk-slider-container">
+        <ul class="uk-slider uk-grid uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-1-1">
+          <li>
+            <div>
+              <h3>Иван Иванов</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim consectetur adipiscing elit, sed do eiusmod tempor  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Арман Мажанов</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim consectetur adipiscing elit, sed do eiusmod tempor  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Александра Натальевна</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim consectetur adipiscing elit, sed do eiusmod tempor  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slider-item="previous"></a>
+      <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slider-item="next"></a>
+    </div>
+  </div>
+</div>
+<!--КОНЕЦ reviews-->
+
+<footer>
+  <div class="slogan-box">
+    <p>Мы индивидуально работаем с каждым клиентом!</p>
+  </div>
+  <div class="uk-container uk-container-center">
+    <div class="uk-grid">
+      <div class="uk-width-medium-4-10">
+        <img class="logo" src="img/logo_white.png">
+        <p>
+          Головной офис:
+          <span class="address">Казахстан, г. Алматы <br>
+                    Ул. Калдаякова 34 (уг. ул. Айтике би 29)</span> <br>
+          Тел./факс: <span class="fax-number">+7 727 291 71 71</span> <br>
+          Моб.: <a href="tel:+7 701 768 10 95">+ 7 701 768 10 95</a> <br>
+          E-mail: <a href="mailto:daphne@daphne.kz">daphne@daphne.kz</a> | <a href="mailto:bilet@daphne.kz">bilet@daphne.kz</a> <br>
+          WEB: <a href="http://www.daphne.kz">www.daphne.kz</a> | <a href="http://www.onlinebilet.kz">www.onlinebilet.kz</a> <br>
+        </p>
+        <p>
+          Часы работы: <br>
+          ПН-ПТ с 9:00 до 19:00 <br>
+          СБ с 10:00 до 17:00 <br>
+        </p>
+      </div>
+      <div class="uk-width-medium-6-10">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QSuXeKdzmyB4WlqRFIu3aQsZs4QR0sqN&amp;width=100%&amp;height=350&amp;lang=ru_RU&amp;sourceType=constructor&amp;"></script>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/components/sticky.min.js"></script>
+<script src="js/components/slider.min.js"></script>
+<script src="js/components/lightbox.min.js"></script>
+</body>
+</html>

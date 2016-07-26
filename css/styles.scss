@@ -1,0 +1,408 @@
+/* НАЧАЛО ОБЩИЕ СТИЛИ */
+
+/* НАЧАЛО подключаем шрифт "Debby": */
+@font-face {
+  font-family: "Debby";
+  src: url("../fonts/debby/Debby.ttf") format("truetype");
+  font-weight: normal;
+}
+/* КОНЕЦ подключаем шрифт "Debby" */
+
+/* НАЧАЛО подключаем шрифт "Century Gothic": */
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/CenturyGothic/CenturyGothic.woff") format("truetype");
+  font-weight: normal;
+}
+/* КОНЕЦ подключаем шрифт "Century Gothic" */
+
+//НАЧАЛО объявляем переменные SASS
+$decor-font: "Debby", fantasy;
+$main-color: #00524b;
+$main-color-light: #00a29b;
+//КОНЕЦ объявляем переменные SASS
+
+/* НАЧАЛО общие стили */
+body {
+  font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  @media screen and (min-width: 768px){
+    font-size: 18px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: #3e807a;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 5px;
+}
+
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  @media screen and (min-width: 768px){
+    font-size: 30px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  background: $main-color;
+  color: white;
+  padding: 10px 30px;
+  &:hover {
+    background: lighten($main-color, 10);
+    color: white;
+  }
+}
+
+img.heading-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 75px;
+  box-sizing: content-box;
+}
+
+.uk-overlay-background { //overlay, например в Акциях
+  background-color: rgba(255,255,255,.7);
+}
+
+.uk-pagination {
+  margin-top: 0;
+  margin-bottom: 25px;
+  &>.uk-active>span {
+    background: $main-color-light;
+  }
+}
+
+
+/* НАЧАЛО header */
+header {
+  background-color: #efefef;
+  padding-bottom: 5px;
+  position: relative;
+  z-index: 10;
+  @media (min-width: 1220px) {
+    background: 50% 100%/auto url("../img/background-plaster.jpg") repeat-x;
+  }
+
+  .header__logo {
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    max-width: 175px;
+    box-sizing: content-box;
+
+    @media (min-width: 1220px) {
+      float: left;
+    }
+  }
+
+  .language-switcher {
+    margin: 0;
+    text-align: center;
+    @media (min-width: 1220px) {
+      padding: 30px 10px 25px 15px;
+      float: left;
+    }
+    a {
+      padding: 3px;
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .navbar-and-contacts-col {
+
+    @media (min-width: 1220px) {
+      float: right;
+    }
+    .contacts {
+      font-size: 16px;
+      text-align: center;
+      padding: 15px 0 5px;
+
+      @media (min-width: 1220px) {
+        text-align: right;
+      }
+
+      span.address {
+        padding: 0 15px;
+      }
+
+      span {
+        display: block;
+        margin-top: 10px;
+        @media (min-width: 480px) {
+          margin-top: 0;
+          display: inline-block;
+        }
+
+        &  + span::before {
+          @media (min-width: 960px) {
+            content: "|";
+          }
+        }
+
+        a {
+          padding: 0 15px;
+        }
+      }
+    }
+
+    .uk-navbar {
+      background: transparent;
+
+      .uk-navbar-nav {
+        float: none;
+        text-align: center;
+        &>li {
+          float: none;
+          display: inline-block;
+          text-align: left;
+          &>a {
+            font-family: "Century Gothic", Arial, sans-serif;
+            padding: 0 12px;
+            background: transparent;
+            font-size: 18px;
+            border-radius: 3px;
+            &:hover {
+              background: rgba(0, 128, 0, 0.2);
+            }
+          }
+        }
+        &>li.uk-active > a {
+          background: rgba(0, 128, 0, 0.1);
+          &:hover {
+            background: rgba(0, 128, 0, 0.2);
+          }
+        }
+      }
+
+      &.uk-active {
+        background: rgba(255,255,255,1);
+        border-bottom: 2px $main-color solid;
+        left: 0;
+        right: 0;
+        .uk-navbar-nav li > a,
+        .uk-navbar-nav li.uk-open > a {
+          color: black;
+          text-shadow: none;
+          &:hover {
+            border-radius: 0;
+          }
+        }
+        .uk-navbar-nav li.uk-active > a {
+          border-radius: 0;
+          background: rgba(0, 128, 0, 0.4);
+          color: white;
+        }
+      }
+    }
+  }
+
+  .uk-offcanvas {
+    .uk-nav-sub {
+      background: rgba(255,255,255,.2);
+      li a {
+        padding: 5px 0;
+      }
+    }
+  }
+}
+/* КОНЕЦ header */
+
+/* НАЧАЛО footer */
+footer {
+  background-color: #0096ac;
+  position: relative;
+  color: black;
+  padding-bottom: 30px;
+  .slogan-box {
+    padding: 20px;
+    background: 50% 50%/cover url("../img/footer-slogan-backround.png") border-box;
+    color: $main-color;
+    font-size: 28px;
+    font-family: $decor-font;
+    text-align: center;
+    margin-bottom: 25px;
+    @media screen and (min-width: 768px){
+      font-size: 48px;
+    }
+  }
+
+  [class*=uk-width] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    p {
+      text-align: center;
+      @media screen and (min-width: 768px){
+        text-align: left;
+      }
+    }
+  }
+
+  .logo {
+    max-width: 280px;
+  }
+
+}
+/* КОНЕЦ footer */
+
+
+/******************************
+НАЧАЛО страницы Главная
+*******************************/
+
+/* НАЧАЛО main-section */
+.main-section {
+  background: 50% 100%/cover;
+  background-clip: content-box;
+  box-sizing: border-box;
+  @media (min-width: 768px) {
+    background: 50% 100%/cover;
+    position: relative;
+    height: 100vh;
+    padding-top: 84px;
+    margin-top: -84px;
+  }
+
+  .content-area {
+    background: white;
+    text-align: center;
+    padding-top: 300px;
+    background-clip: content-box;
+    @media (min-width: 768px) {
+      padding-bottom: 15px;
+      padding-top: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: 50% 50%/cover url("../img/main_content-background.png");
+    }
+    img {
+      padding-top: 15px;
+    }
+
+    h2 {
+      color: $main-color;
+      font-size: 36px;
+      font-family: $decor-font;
+      margin: 0;
+      @media (min-width: 768px) {
+        font-size: 48px;
+      }
+    }
+  }
+}
+/* КОНЕЦ main-section */
+
+/* НАЧАЛО advantages */
+.advantages {
+  background: url("../img/background-plaster.jpg");
+  padding: 25px 0;
+  text-align: center;
+
+  img.heading-img {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  li {
+    img {
+      max-width: 150px;
+      @media (min-width: 768px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+/* КОНЕЦ advantages */
+
+/* НАЧАЛО about */
+.about {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  [class*=uk-width] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    img {
+      max-width: 250px;
+      @media (min-width: 768px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+/* КОНЕЦ about */
+
+/* НАЧАЛО promotions */
+.promotions {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+    background: linear-gradient(115deg,
+            white 0%,
+            white 40%,
+            transparent 40%,
+            transparent 100%),
+    50% 50%/cover url("../img/main-background-1.jpg");
+  }
+  h2 {
+    font-family: $decor-font;
+    font-size: 48px;
+  }
+  .content-box {
+    @media (min-width: 768px) {
+      max-width: 300px;
+    }
+  }
+}
+/* КОНЕЦ promotions */
+
+/* НАЧАЛО reviews */
+.reviews {
+  background: url("../img/background-plaster.jpg");
+  padding: 25px 0;
+  text-align: center;
+
+  img.heading-img {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-family: $decor-font;
+    font-size: 36px;
+    background: 50% 50%/100% 100% url("../img/reviews-names-background.png");
+    padding: 40px;
+  }
+
+}
+/* КОНЕЦ reviews */
+
+/******************************
+КОНЕЦ страница Главная
+*******************************/

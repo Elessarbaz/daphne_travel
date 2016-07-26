@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* НАЧАЛО ОБЩИЕ СТИЛИ */
+/* НАЧАЛО подключаем шрифт "Debby": */
+@font-face {
+  font-family: "Debby";
+  src: url("../fonts/debby/Debby.ttf") format("truetype");
+  font-weight: normal; }
+/* КОНЕЦ подключаем шрифт "Debby" */
+/* НАЧАЛО подключаем шрифт "Century Gothic": */
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/CenturyGothic/CenturyGothic.woff") format("truetype");
+  font-weight: normal; }
+/* КОНЕЦ подключаем шрифт "Century Gothic" */
+/* НАЧАЛО общие стили */
+body {
+  font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2; }
+  @media screen and (min-width: 768px) {
+    body {
+      font-size: 18px; } }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #3e807a; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 5px; }
+
+h2 {
+  font-size: 24px;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-size: 30px; } }
+
+.btn {
+  display: inline-block;
+  background: #00524b;
+  color: white;
+  padding: 10px 30px; }
+  .btn:hover {
+    background: #00857a;
+    color: white; }
+
+img.heading-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 75px;
+  box-sizing: content-box; }
+
+.uk-overlay-background {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.uk-pagination {
+  margin-top: 0;
+  margin-bottom: 25px; }
+  .uk-pagination > .uk-active > span {
+    background: #00a29b; }
+
+/* НАЧАЛО header */
+header {
+  background-color: #efefef;
+  padding-bottom: 5px;
+  position: relative;
+  z-index: 10; }
+  @media (min-width: 1220px) {
+    header {
+      background: 50% 100%/auto url("../img/background-plaster.jpg") repeat-x; } }
+  header .header__logo {
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    max-width: 175px;
+    box-sizing: content-box; }
+    @media (min-width: 1220px) {
+      header .header__logo {
+        float: left; } }
+  header .language-switcher {
+    margin: 0;
+    text-align: center; }
+    @media (min-width: 1220px) {
+      header .language-switcher {
+        padding: 30px 10px 25px 15px;
+        float: left; } }
+    header .language-switcher a {
+      padding: 3px; }
+      header .language-switcher a.active {
+        font-weight: bold; }
+  @media (min-width: 1220px) {
+    header .navbar-and-contacts-col {
+      float: right; } }
+  header .navbar-and-contacts-col .contacts {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 0 5px; }
+    @media (min-width: 1220px) {
+      header .navbar-and-contacts-col .contacts {
+        text-align: right; } }
+    header .navbar-and-contacts-col .contacts span.address {
+      padding: 0 15px; }
+    header .navbar-and-contacts-col .contacts span {
+      display: block;
+      margin-top: 10px; }
+      @media (min-width: 480px) {
+        header .navbar-and-contacts-col .contacts span {
+          margin-top: 0;
+          display: inline-block; } }
+      @media (min-width: 960px) {
+        header .navbar-and-contacts-col .contacts span + span::before {
+          content: "|"; } }
+      header .navbar-and-contacts-col .contacts span a {
+        padding: 0 15px; }
+  header .navbar-and-contacts-col .uk-navbar {
+    background: transparent; }
+    header .navbar-and-contacts-col .uk-navbar .uk-navbar-nav {
+      float: none;
+      text-align: center; }
+      header .navbar-and-contacts-col .uk-navbar .uk-navbar-nav > li {
+        float: none;
+        display: inline-block;
+        text-align: left; }
+        header .navbar-and-contacts-col .uk-navbar .uk-navbar-nav > li > a {
+          font-family: "Century Gothic", Arial, sans-serif;
+          padding: 0 12px;
+          background: transparent;
+          font-size: 18px;
+          border-radius: 3px; }
+          header .navbar-and-contacts-col .uk-navbar .uk-navbar-nav > li > a:hover {
+            background: rgba(0, 128, 0, 0.2); }
+      header .navbar-and-contacts-col .uk-navbar .uk-navbar-nav > li.uk-active > a {
+        background: rgba(0, 128, 0, 0.1); }
+        header .navbar-and-contacts-col .uk-navbar .uk-navbar-nav > li.uk-active > a:hover {
+          background: rgba(0, 128, 0, 0.2); }
+    header .navbar-and-contacts-col .uk-navbar.uk-active {
+      background: white;
+      border-bottom: 2px #00524b solid;
+      left: 0;
+      right: 0; }
+      header .navbar-and-contacts-col .uk-navbar.uk-active .uk-navbar-nav li > a,
+      header .navbar-and-contacts-col .uk-navbar.uk-active .uk-navbar-nav li.uk-open > a {
+        color: black;
+        text-shadow: none; }
+        header .navbar-and-contacts-col .uk-navbar.uk-active .uk-navbar-nav li > a:hover,
+        header .navbar-and-contacts-col .uk-navbar.uk-active .uk-navbar-nav li.uk-open > a:hover {
+          border-radius: 0; }
+      header .navbar-and-contacts-col .uk-navbar.uk-active .uk-navbar-nav li.uk-active > a {
+        border-radius: 0;
+        background: rgba(0, 128, 0, 0.4);
+        color: white; }
+  header .uk-offcanvas .uk-nav-sub {
+    background: rgba(255, 255, 255, 0.2); }
+    header .uk-offcanvas .uk-nav-sub li a {
+      padding: 5px 0; }
+
+/* КОНЕЦ header */
+/* НАЧАЛО footer */
+footer {
+  background-color: #0096ac;
+  position: relative;
+  color: black;
+  padding-bottom: 30px; }
+  footer .slogan-box {
+    padding: 20px;
+    background: 50% 50%/cover url("../img/footer-slogan-backround.png") border-box;
+    color: #00524b;
+    font-size: 28px;
+    font-family: "Debby", fantasy;
+    text-align: center;
+    margin-bottom: 25px; }
+    @media screen and (min-width: 768px) {
+      footer .slogan-box {
+        font-size: 48px; } }
+  footer [class*=uk-width] {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    footer [class*=uk-width] p {
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        footer [class*=uk-width] p {
+          text-align: left; } }
+  footer .logo {
+    max-width: 280px; }
+
+/* КОНЕЦ footer */
+/******************************
+НАЧАЛО страницы Главная
+*******************************/
+/* НАЧАЛО main-section */
+.main-section {
+  background: 50% 100%/cover;
+  background-clip: content-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .main-section {
+      background: 50% 100%/cover;
+      position: relative;
+      height: 100vh;
+      padding-top: 84px;
+      margin-top: -84px; } }
+  .main-section .content-area {
+    background: white;
+    text-align: center;
+    padding-top: 300px;
+    background-clip: content-box; }
+    @media (min-width: 768px) {
+      .main-section .content-area {
+        padding-bottom: 15px;
+        padding-top: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: 50% 50%/cover url("../img/main_content-background.png"); } }
+    .main-section .content-area img {
+      padding-top: 15px; }
+    .main-section .content-area h2 {
+      color: #00524b;
+      font-size: 36px;
+      font-family: "Debby", fantasy;
+      margin: 0; }
+      @media (min-width: 768px) {
+        .main-section .content-area h2 {
+          font-size: 48px; } }
+
+/* КОНЕЦ main-section */
+/* НАЧАЛО advantages */
+.advantages {
+  background: url("../img/background-plaster.jpg");
+  padding: 25px 0;
+  text-align: center; }
+  .advantages img.heading-img {
+    margin-bottom: 25px; }
+  .advantages h3 {
+    font-weight: bold; }
+  .advantages li img {
+    max-width: 150px; }
+    @media (min-width: 768px) {
+      .advantages li img {
+        max-width: 100%; } }
+
+/* КОНЕЦ advantages */
+/* НАЧАЛО about */
+.about {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center; }
+  .about [class*=uk-width] {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .about [class*=uk-width] img {
+      max-width: 250px; }
+      @media (min-width: 768px) {
+        .about [class*=uk-width] img {
+          max-width: 100%; } }
+
+/* КОНЕЦ about */
+/* НАЧАЛО promotions */
+.promotions {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .promotions {
+      text-align: left;
+      background: linear-gradient(115deg, white 0%, white 40%, transparent 40%, transparent 100%), 50% 50%/cover url("../img/main-background-1.jpg"); } }
+  .promotions h2 {
+    font-family: "Debby", fantasy;
+    font-size: 48px; }
+  @media (min-width: 768px) {
+    .promotions .content-box {
+      max-width: 300px; } }
+
+/* КОНЕЦ promotions */
+/* НАЧАЛО reviews */
+.reviews {
+  background: url("../img/background-plaster.jpg");
+  padding: 25px 0;
+  text-align: center; }
+  .reviews img.heading-img {
+    margin-bottom: 25px; }
+  .reviews h3 {
+    font-family: "Debby", fantasy;
+    font-size: 36px;
+    background: 50% 50%/100% 100% url("../img/reviews-names-background.png");
+    padding: 40px; }
+
+/* КОНЕЦ reviews */
+/******************************
+КОНЕЦ страница Главная
+*******************************/
+
+/*# sourceMappingURL=styles.css.map */
