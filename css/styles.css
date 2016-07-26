@@ -133,11 +133,11 @@ header {
           font-size: 18px;
           border-radius: 3px; }
           header .navbar-and-contacts-col .uk-navbar .uk-navbar-nav > li > a:hover {
-            background: rgba(0, 128, 0, 0.2); }
+            background: rgba(0, 82, 75, 0.2); }
       header .navbar-and-contacts-col .uk-navbar .uk-navbar-nav > li.uk-active > a {
-        background: rgba(0, 128, 0, 0.1); }
+        background: rgba(0, 82, 75, 0.1); }
         header .navbar-and-contacts-col .uk-navbar .uk-navbar-nav > li.uk-active > a:hover {
-          background: rgba(0, 128, 0, 0.2); }
+          background: rgba(0, 82, 75, 0.2); }
     header .navbar-and-contacts-col .uk-navbar.uk-active {
       background: white;
       border-bottom: 2px #00524b solid;
@@ -152,7 +152,7 @@ header {
           border-radius: 0; }
       header .navbar-and-contacts-col .uk-navbar.uk-active .uk-navbar-nav li.uk-active > a {
         border-radius: 0;
-        background: rgba(0, 128, 0, 0.4);
+        background: #00b8a8;
         color: white; }
   header .uk-offcanvas .uk-nav-sub {
     background: rgba(255, 255, 255, 0.2); }

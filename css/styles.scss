@@ -48,7 +48,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5px;
 }
 
-
 h2 {
   font-size: 24px;
   text-align: center;
@@ -182,14 +181,14 @@ header {
             font-size: 18px;
             border-radius: 3px;
             &:hover {
-              background: rgba(0, 128, 0, 0.2);
+              background: rgba(0, 82, 75, 0.2);
             }
           }
         }
         &>li.uk-active > a {
-          background: rgba(0, 128, 0, 0.1);
+          background: rgba(0, 82, 75, 0.1);
           &:hover {
-            background: rgba(0, 128, 0, 0.2);
+            background: rgba(0, 82, 75, 0.2);
           }
         }
       }
@@ -209,7 +208,7 @@ header {
         }
         .uk-navbar-nav li.uk-active > a {
           border-radius: 0;
-          background: rgba(0, 128, 0, 0.4);
+          background: lighten($main-color, 20);
           color: white;
         }
       }
