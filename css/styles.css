@@ -12,7 +12,6 @@
   src: url("../fonts/CenturyGothic/CenturyGothic.woff") format("truetype");
   font-weight: normal; }
 /* КОНЕЦ подключаем шрифт "Century Gothic" */
-/* НАЧАЛО общие стили */
 body {
   font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -64,6 +63,7 @@ img.heading-img {
   .uk-pagination > .uk-active > span {
     background: #00a29b; }
 
+/* КОНЕЦ ОБЩИЕ СТИЛИ */
 /* НАЧАЛО header */
 header {
   background-color: #efefef;

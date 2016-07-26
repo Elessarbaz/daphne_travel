@@ -22,7 +22,6 @@ $main-color: #00524b;
 $main-color-light: #00a29b;
 //КОНЕЦ объявляем переменные SASS
 
-/* НАЧАЛО общие стили */
 body {
   font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -87,6 +86,8 @@ img.heading-img {
     background: $main-color-light;
   }
 }
+
+/* КОНЕЦ ОБЩИЕ СТИЛИ */
 
 
 /* НАЧАЛО header */
