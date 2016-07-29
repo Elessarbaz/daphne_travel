@@ -406,3 +406,160 @@ footer {
 /******************************
 КОНЕЦ страница Главная
 *******************************/
+
+/******************************
+НАЧАЛо страница О нас
+*******************************/
+
+.about-menu{
+  li.uk-active{
+    background: #0096ac;
+    color: white;
+  }
+}
+
+.form-about{
+
+  .uk-grid {
+    padding-top: 25px;
+    padding-bottom: 25px ;
+    background-size: cover;
+    background-image: url(../img/form-img.jpg);
+  }
+
+  form{
+    background: rgba(255,255,255,0.6);
+    padding: 25px;
+
+    h3{
+      font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 30px;
+    }
+  }
+
+  .uk-grid > .form-background input{
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 15px auto;
+    border: 1px solid black;
+    padding: 10px 5px;
+    color: black;
+    font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  .uk-grid > .form-background input[type="submit"]{
+    background: #0096ac;
+    padding: 15px;
+  }
+}
+
+/******************************
+КОНЕЦ страница О нас
+*******************************/
+
+/******************************
+НАЧАЛо страница Cпецпредложения
+*******************************/
+
+.block-services, .custom-visa{
+  .service-img{
+    background-size: cover;
+    width: 100%;
+    background-image: url(../img/form-img.jpg);
+    padding-bottom: 70%;
+  }
+
+  h3{
+    font-size: 28px;
+    font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 0 !important;
+  }
+
+  img{
+    max-width: 100% !important;
+  }
+
+  button.uk-button{
+    background: #0096ac;
+    color: white;
+    font-size: 24px;
+    margin: 15px auto;
+  }
+
+  form{
+    h3{
+      color: black;
+    }
+    input{
+      display: block;
+      margin: 10px auto;
+      width: 100%;
+      background: white;
+      border: 1px solid black;
+      font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      padding: 10px 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"]{
+      background: #0096ac;
+      color: white;
+      font-size: 30px;
+    }
+    input[type="text"]:disabled{
+      background: #0096ac;
+      color: white;
+    }
+  }
+}
+
+/******************************
+КОНЕЦ страница Cпецпредложения
+*******************************/
+
+
+/******************************
+НАЧАЛО страница Туры Каталог
+*******************************/
+
+.tour-catalog-block{
+
+  border: 1px solid #0096ac;
+
+  padding-bottom: 10px;
+
+  .tour-img-catalog{
+    background-image: url(../img/form-img.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 60%;
+  }
+
+  h3{
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  article{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  a{
+    text-decoration: underline;
+  }
+}
+
+/******************************
+КОНЕЦ страница Туры Каталог
+*******************************/
+
+.contacts{
+  h3{
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daphne Travel | Главная</title>
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/components/sticky.min.css">
+  <link rel="stylesheet" href="css/components/slider.min.css">
+  <link rel="stylesheet" href="css/components/slidenav.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header id="home">
+  <div class="uk-container uk-container-center">
+    <a href="index.html"><img src="img/logo.png" alt="Лого" class="header__logo"></a>
+    <p class="language-switcher">
+      <a href="" class="active">RU</a>
+      <a href="">EN</a>
+      <a href="">TR</a>
+    </p>
+    <div class="navbar-and-contacts-col">
+      <div class="contacts">
+        <span><a href="tel:+7 727 291 71 71">+7 727 291 71 71</a></span>
+        <span><a href="tel:+ 7 701 768 10 95">+ 7 701 768 10 95</a></span>
+        <span><a href="mailto:daphne@daphne.kz">daphne@daphne.kz</a></span>
+        <span><a href="mailto:bilet@daphne.kz">bilet@daphne.kz</a></span>
+      </div>
+
+      <nav class="uk-navbar"
+           data-uk-sticky="{getWidthFrom:'.main-section', top:-200, animation: 'uk-animation-slide-top'}">
+        <ul class="uk-navbar-nav uk-hidden-small">
+          <li class="uk-active"><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="online-booking.html">Онлайн бронирование</a></li>
+          <li><a href="promotions.html">Спецпредложения</a></li>
+          <li><a href="visas.html">Визы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <a href="#my-id" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+      </nav>
+
+      <div id="my-id" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-offcanvas" data-uk-scrollspy-nav="{closest:'li', topoffset:-200}">
+            <li class="uk-active"><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="online-booking.html">Онлайн бронирование</a></li>
+            <li><a href="promotions.html">Спецпредложения</a></li>
+            <li><a href="visas.html">Визы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!--НАЧАЛО main-section-->
+<div class="main-section" style="background-image: url('img/main-background-4.jpg')">
+  <div class="content-area">
+    <img class="heading-img" src="img/icon-plane.png">
+    <h2>Специальные предложения</h2>
+  </div>
+</div>
+<!--КОНЕЦ main-section-->
+
+<!--НАЧАЛО about-->
+<div class="about uk-container uk-container-center">
+  <div class="block-services">
+    <div class="uk-grid">
+      <div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2">
+        <figure class="uk-overlay uk-overlay-hover">
+          <img src="img/form-img.jpg" width="" height="" alt="">
+          <figcaption class="uk-visible-large uk-overlay-panel uk-overlay-background uk-overlay-slide-right">
+            <form action="">
+              <h3>Свяжитесь с нами для получения <br> подробной информации</h3>
+              <input placeholder="Имя" type="text">
+              <input placeholder="Email" type="email">
+              <input placeholder="Телефон" type="tel">
+              <input type="submit" value="Отправить">
+            </form>
+          </figcaption>
+        </figure>
+        <div id="modal-service" class="uk-modal">
+          <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <form action="">
+              <h3>Свяжитесь с нами для получения <br> подробной информации</h3>
+              <input placeholder="Имя" type="text">
+              <input placeholder="Email" type="email">
+              <input placeholder="Телефон" type="tel">
+              <input type="submit" value="Отправить">
+            </form>
+          </div>
+        </div>
+        <button class="uk-button uk-hidden-large" data-uk-modal="{target:'#modal-service'}">Узнать подробнее?</button>
+      </div>
+      <div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2">
+        <h3>Название предложения</h3>
+        <article>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at corporis cupiditate dolore, earum
+            fugit hic, ipsa ipsum laborum magni necessitatibus, nisi odio pariatur quas quis repellat tempora totam
+            unde.
+          </div>
+          <div>Beatae, doloribus, libero. Ad adipisci beatae commodi consequuntur distinctio dolore, ea exercitationem
+            expedita laboriosam maxime, modi molestias non nulla numquam obcaecati officiis pariatur perferendis
+            quibusdam quis quod, totam voluptatibus voluptatum.
+          </div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut est quaerat repellat repudiandae
+            sed tempora temporibus totam veritatis vero. Asperiores, aspernatur dicta necessitatibus pariatur provident
+            temporibus totam ullam voluptas.
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="block-services">
+    <div class="uk-grid">
+      <div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2">
+        <h3>Название предложения</h3>
+        <article>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at corporis cupiditate dolore, earum
+            fugit hic, ipsa ipsum laborum magni necessitatibus, nisi odio pariatur quas quis repellat tempora totam
+            unde.
+          </div>
+          <div>Beatae, doloribus, libero. Ad adipisci beatae commodi consequuntur distinctio dolore, ea exercitationem
+            expedita laboriosam maxime, modi molestias non nulla numquam obcaecati officiis pariatur perferendis
+            quibusdam quis quod, totam voluptatibus voluptatum.
+          </div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut est quaerat repellat repudiandae
+            sed tempora temporibus totam veritatis vero. Asperiores, aspernatur dicta necessitatibus pariatur provident
+            temporibus totam ullam voluptas.
+          </div>
+        </article>
+      </div>
+      <div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2">
+        <figure class="uk-overlay uk-overlay-hover">
+          <img src="img/form-img.jpg" width="" height="" alt="">
+          <figcaption class="uk-visible-large uk-overlay-panel uk-overlay-background uk-overlay-slide-right">
+            <form action="">
+              <h3>Свяжитесь с нами для получения <br> подробной информации</h3>
+              <input placeholder="Имя" type="text">
+              <input placeholder="Email" type="email">
+              <input placeholder="Телефон" type="tel">
+              <input type="submit" value="Отправить">
+            </form>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+<!--КОНЕЦ about-->
+
+
+<footer>
+  <div class="slogan-box">
+    <p>Мы индивидуально работаем с каждым клиентом!</p>
+  </div>
+  <div class="uk-container uk-container-center">
+    <div class="uk-grid">
+      <div class="uk-width-medium-4-10">
+        <img class="logo" src="img/logo_white.png">
+        <p>
+          Головной офис:
+          <span class="address">Казахстан, г. Алматы <br>
+                    Ул. Калдаякова 34 (уг. ул. Айтике би 29)</span> <br>
+          Тел./факс: <span class="fax-number">+7 727 291 71 71</span> <br>
+          Моб.: <a href="tel:+7 701 768 10 95">+ 7 701 768 10 95</a> <br>
+          E-mail: <a href="mailto:daphne@daphne.kz">daphne@daphne.kz</a> | <a href="mailto:bilet@daphne.kz">bilet@daphne.kz</a> <br>
+          WEB: <a href="http://www.daphne.kz">www.daphne.kz</a> | <a href="http://www.onlinebilet.kz">www.onlinebilet.kz</a> <br>
+        </p>
+        <p>
+          Часы работы: <br>
+          ПН-ПТ с 9:00 до 19:00 <br>
+          СБ с 10:00 до 17:00 <br>
+        </p>
+      </div>
+      <div class="uk-width-medium-6-10">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QSuXeKdzmyB4WlqRFIu3aQsZs4QR0sqN&amp;width=100%&amp;height=350&amp;lang=ru_RU&amp;sourceType=constructor&amp;"></script>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/components/sticky.min.js"></script>
+<script src="js/components/slider.min.js"></script>
+<script src="js/components/lightbox.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
