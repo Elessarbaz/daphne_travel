@@ -1,50 +1,60 @@
-<?php
-/**
- * The header for our theme.
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package daphne_travel
- */
-
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-<?php wp_head(); ?>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Daphne Travel | Главная</title>
+	<link rel="stylesheet" href="css/uikit.min.css">
+	<link rel="stylesheet" href="css/components/sticky.min.css">
+	<link rel="stylesheet" href="css/components/slider.min.css">
+	<link rel="stylesheet" href="css/components/slidenav.min.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'daphne_travel' ); ?></a>
+<header id="home">
+	<div class="uk-container uk-container-center">
+		<a href="index.html"><img src="img/logo.png" alt="Лого" class="header__logo"></a>
+		<p class="language-switcher">
+			<a href="" class="active">RU</a>
+			<a href="">EN</a>
+			<a href="">TR</a>
+		</p>
+		<div class="navbar-and-contacts-col">
+			<div class="contacts">
+				<span><a href="tel:+7 727 291 71 71">+7 727 291 71 71</a></span>
+				<span><a href="tel:+ 7 701 768 10 95">+ 7 701 768 10 95</a></span>
+				<span><a href="mailto:daphne@daphne.kz">daphne@daphne.kz</a></span>
+				<span><a href="mailto:bilet@daphne.kz">bilet@daphne.kz</a></span>
+			</div>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+			<nav class="uk-navbar"
+				 data-uk-sticky="{getWidthFrom:'.main-section', top:-200, animation: 'uk-animation-slide-top'}">
+				<ul class="uk-navbar-nav uk-hidden-small">
+					<li class="uk-active"><a href="index.html">Главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="online-booking.html">Онлайн бронирование</a></li>
+					<li><a href="promotions.html">Спецпредложения</a></li>
+					<li><a href="visas.html">Визы</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<a href="#my-id" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+			</nav>
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
+			<div id="my-id" class="uk-offcanvas">
+				<div class="uk-offcanvas-bar">
+					<ul class="uk-nav uk-nav-offcanvas" data-uk-scrollspy-nav="{closest:'li', topoffset:-200}">
+						<li class="uk-active"><a href="index.html">Главная</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="online-booking.html">Онлайн бронирование</a></li>
+						<li><a href="promotions.html">Спецпредложения</a></li>
+						<li><a href="visas.html">Визы</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'daphne_travel' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+		</div>
+	</div>
+</header>
