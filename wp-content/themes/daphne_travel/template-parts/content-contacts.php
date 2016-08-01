@@ -18,18 +18,18 @@
 			<img src="<?php bloginfo('template_directory') ?>/public/img/64/Kazakhstan.png" alt="">
 			<h3>Казахстан</h3>
 			<address>
-				<p>Адрес: Казастан, г. Алматы</p>
-				<p>Телефон: <a href="">8 (727) 777 77 77</a></p>
-				<p>Email: <a href="">example@example.com</a></p>
+				<p>Адрес: <?=get_field('address',4) ?></p>
+				<p>Телефон: <a href="tel:<?=get_field('phone-1',4)?>"><?=get_field('phone-1',4)?></a></p>
+				<p>Email: <a href="mailto:<?=get_field('email-1',4)?>"><?=get_field('email-1',4)?></a></p>
 			</address>
 		</div>
 		<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2">
 			<img src="<?php bloginfo('template_directory') ?>/public/img/64/Turkey.png" alt="">
 			<h3>Турция</h3>
 			<address>
-				<p>Адрес: Турция, г. Стамбул</p>
-				<p>Телефон: <a href="">8 (727) 777 77 77</a></p>
-				<p>Email: <a href="">example@example.com</a></p>
+				<p>Адрес: <?=get_field('address-turke',4)?></p>
+				<p>Телефон: <a href="tel:<?=get_field('phone-turke',4)?>"><?=get_field('phone-turke',4)?></a></p>
+				<p>Email: <a href="mailto:<?=get_field('email-turke',4)?>"><?=get_field('email-turke',4)?></a></p>
 			</address>
 		</div>
 	</div>
