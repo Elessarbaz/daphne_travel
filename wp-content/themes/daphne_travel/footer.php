@@ -32,5 +32,11 @@
 <script src="<?php bloginfo('template_directory') ?>/public/js/components/slider.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/js/components/lightbox.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/js/app.js"></script>
+<script>
+	$('a[data-country]').click(function () {
+		var country=$(this).data('country');
+		$("#country").val(country);
+	})
+</script>
 </body>
 </html>
