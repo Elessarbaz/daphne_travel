@@ -9,10 +9,10 @@
 
 <!--НАЧАЛО about-->
 <div class="about uk-container uk-container-center">
+	<?php $posts=get_posts(array('category_name'=>'promotion'));
+	foreach ($posts as $post): setup_postdata($post);
+	?>
 	<div class="block-services">
-		<?php $posts=get_post(array('category_name'=>'promotion'));
-		foreach ($posts as $post): setup_postdata($post);
-		?>
 		<div class="uk-grid">
 			<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2">
 				<figure class="uk-overlay uk-overlay-hover">
@@ -46,60 +46,12 @@
 			<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2">
 				<h3>Название предложения</h3>
 				<article>
-					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at corporis cupiditate dolore, earum
-						fugit hic, ipsa ipsum laborum magni necessitatibus, nisi odio pariatur quas quis repellat tempora totam
-						unde.
-					</div>
-					<div>Beatae, doloribus, libero. Ad adipisci beatae commodi consequuntur distinctio dolore, ea exercitationem
-						expedita laboriosam maxime, modi molestias non nulla numquam obcaecati officiis pariatur perferendis
-						quibusdam quis quod, totam voluptatibus voluptatum.
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut est quaerat repellat repudiandae
-						sed tempora temporibus totam veritatis vero. Asperiores, aspernatur dicta necessitatibus pariatur provident
-						temporibus totam ullam voluptas.
-					</div>
+					<?php the_content() ?>
 				</article>
 
 			</div>
 		</div>
-		<?php endforeach; ?>
-
-
 	</div>
-	<div class="block-services">
-		<div class="uk-grid">
-			<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2">
-				<h3>Название предложения</h3>
-				<article>
-					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at corporis cupiditate dolore, earum
-						fugit hic, ipsa ipsum laborum magni necessitatibus, nisi odio pariatur quas quis repellat tempora totam
-						unde.
-					</div>
-					<div>Beatae, doloribus, libero. Ad adipisci beatae commodi consequuntur distinctio dolore, ea exercitationem
-						expedita laboriosam maxime, modi molestias non nulla numquam obcaecati officiis pariatur perferendis
-						quibusdam quis quod, totam voluptatibus voluptatum.
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut est quaerat repellat repudiandae
-						sed tempora temporibus totam veritatis vero. Asperiores, aspernatur dicta necessitatibus pariatur provident
-						temporibus totam ullam voluptas.
-					</div>
-				</article>
-			</div>
-			<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2">
-				<figure class="uk-overlay uk-overlay-hover">
-					<img src="img/form-img.jpg" width="" height="" alt="">
-					<figcaption class="uk-visible-large uk-overlay-panel uk-overlay-background uk-overlay-slide-right">
-						<form action="">
-							<h3>Свяжитесь с нами для получения <br> подробной информации</h3>
-							<input placeholder="Имя" type="text">
-							<input placeholder="Email" type="email">
-							<input placeholder="Телефон" type="tel">
-							<input type="submit" value="Отправить">
-						</form>
-					</figcaption>
-				</figure>
-			</div>
-		</div>
-	</div>
+	<?php endforeach; ?>
 </div>
 <!--КОНЕЦ about-->
