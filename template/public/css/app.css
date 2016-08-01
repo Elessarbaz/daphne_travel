@@ -1,0 +1,319 @@
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    src: url(../fonts/HelveticaNeueCyr-Roman.otf);
+}
+
+@font-face {
+    font-family: RosaMarena;
+    src: url(../fonts/Rosa_Marena.ttf);
+}
+
+header{
+    padding-top: 10px;
+}
+
+header .uk-navbar,
+header .uk-navbar .uk-navbar-nav{
+    width: 100%;
+    background: transparent;
+}
+
+header .uk-navbar li a{
+    font-size: 18px;
+    font-family: "HelveticaNeueCyr";
+    color: rgb(82, 78, 76);
+    text-align: left;
+}
+
+header .uk-navbar-nav>li.uk-active>a{
+    background-color: #000;
+    color: #fff;
+}
+
+header .shadow-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main .uk-container > * {
+    margin-top: 20px !important ;
+    margin-bottom: 20px !important;
+}
+
+.portfolio > * {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+main .main-block{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main .main-image{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
+
+.title-about{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.offcanvas-logo{
+    background: #FFFFFF;
+}
+
+.nav-menu{
+    background: rgba(255, 255, 255, 0.68);
+}
+
+.nav-menu.uk-active{
+    height: 75px;
+}
+.nav-logo{
+    background: #fff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 38%;
+}
+
+.title-about figure{
+    height: 2px;
+    flex: 1 0 auto;
+    background: black;
+    margin: 0 auto !important;
+}
+
+.title-about h2{
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    padding: 5px 15px;
+    flex: 0 1 auto;
+    line-height: 1.2;
+    margin: 10px 20px;
+    background: black;
+    color: white;
+}
+
+.about .img-avatar{
+    height: 90px;
+    width: 90px;
+    margin: 15px auto;
+    border-radius: 50%;
+    background-image: url(../img/avatar.png);
+    background-size: cover;
+}
+
+.about article{
+    color: #524e4c;
+    text-align: center;
+    font-family: HelveticaNeueCyr;
+    line-height: 1.2;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.icon-block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-block a{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding: 5px;
+    width: 25px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.icon-block a:hover{
+    text-decoration: none !important;
+}
+
+.icon-block a i{
+    color: white;
+    font-size: 22px;
+}
+
+.hobbies article{
+    color: #524e4c;
+    text-align: left;
+    font-family: HelveticaNeueCyr;
+    line-height: 1.5;
+    font-size: 18px;
+    padding-left: 5%;
+}
+
+.main-hobbies{
+    background-image: url(../img/flowers.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hobbbies-grid > *{
+    margin-bottom: 5px !important;
+}
+
+.goldlline{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.title-hobbies{
+    width: 70%;
+    border-left: 5px solid black;
+    padding: 20px 10px;
+    text-align: left;
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    line-height: 1.2;
+    color: black;
+    margin: 20px 0 !important;
+}
+
+.small-slider-image{
+    width: 100%;
+    background-image: url(../img/1.png);
+    background-size: cover;
+    padding-bottom: 60%;
+}
+
+.big-slider-image{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.no-padding{
+    padding: 0 !important;
+}
+
+.text article{
+    font-family: RosaMarena;
+    font-size: 30px;
+    line-height: 1.2;
+    color: black;
+}
+
+.text article p{
+    margin: 0 auto;
+}
+
+.text article span{
+    font-weight: bold;
+}
+
+form{
+    margin-top: 25px !important;
+    margin-bottom: 20px;
+}
+
+form .icon-block{
+    margin-top: 30px;
+}
+
+form h3{
+    font-size: 18px;
+    font-family: HelveticaNeueCyr;
+    color: black;
+    line-height: 1.2;
+}
+
+form input{
+    box-sizing: border-box;
+    width: 90%;
+    font-family: HelveticaNeueCyr;
+    padding: 5px;
+    color: black;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+form input[type='submit']{
+    background: black;
+    color:white;
+}
+
+footer{
+    background: black;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+footer address{
+    color: white;
+    font-family: HelveticaNeueCyr;
+    font-size: 20px;
+}
+
+footer article,
+footer article>*{
+    color: white;
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.uk-slidenav{
+    color: black !important;
+    display: block;
+}
+
+.uk-slidenav-previous{
+    left: -55px !important;
+}
+
+.uk-slidenav-next{
+    right: -55px !important;
+}
+
+.uk-dotnav{
+    margin-top: 10px !important;
+}
+
+.uk-dotnav a{
+    background: gray;
+}
+
+.uk-dotnav .uk-active a{
+    background: black;
+}
+
+@media (max-width: 768px) {
+    .main-hobbies{
+        padding-bottom: 60%;
+    }
+    .hobbbies-grid > *{
+        width: 33.33%;
+    }
+    .title-hobbies{
+        margin-top: 60% !important;
+        width: 100%;
+    }
+    .big-slider-image{
+        padding-bottom: 80%;
+        height: auto;
+    }
+    main .main-image{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-top: 10px;
+    }
+    form input{
+        margin-bottom: 10px !important;
+        width: 100%;
+    }
+}
