@@ -4,18 +4,18 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Daphne Travel | Главная</title>
-	<link rel="stylesheet" href="css/uikit.min.css">
-	<link rel="stylesheet" href="css/components/sticky.min.css">
-	<link rel="stylesheet" href="css/components/slider.min.css">
-	<link rel="stylesheet" href="css/components/slidenav.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<?php wp_head() ?>
+	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/public/css/uikit.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/public/css/components/sticky.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/public/css/components/slider.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/public/css/components/slidenav.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/public/css/styles.css">
 </head>
 <body>
 
 <header id="home">
 	<div class="uk-container uk-container-center">
-		<a href="index.html"><img src="img/logo.png" alt="Лого" class="header__logo"></a>
+		<a href="/"><img src="<?=get_field('logo-header',4)?>" alt="Лого" class="header__logo"></a>
 		<p class="language-switcher">
 			<a href="" class="active">RU</a>
 			<a href="">EN</a>
