@@ -1,3 +1,4 @@
+<?php $obj=get_queried_object(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,21 +24,19 @@
 		</p>
 		<div class="navbar-and-contacts-col">
 			<div class="contacts">
-				<span><a href="tel:+7 727 291 71 71">+7 727 291 71 71</a></span>
-				<span><a href="tel:+ 7 701 768 10 95">+ 7 701 768 10 95</a></span>
-				<span><a href="mailto:daphne@daphne.kz">daphne@daphne.kz</a></span>
-				<span><a href="mailto:bilet@daphne.kz">bilet@daphne.kz</a></span>
+				<span><a href="tel:<?=get_field('phone-1',4)?>"><?=get_field('phone-1',4)?></a></span>
+				<span><a href="tel:<?=get_field('phone-2',4)?>"><?=get_field('phone-2',4)?></a></span>
+				<span><a href="mailto:<?=get_field('email-1',4)?>"><?=get_field('email-1',4)?></a></span>
+				<span><a href="mailto:<?=get_field('email-2',4)?>"><?=get_field('email-2',4)?></a></span>
 			</div>
 
 			<nav class="uk-navbar"
 				 data-uk-sticky="{getWidthFrom:'.main-section', top:-200, animation: 'uk-animation-slide-top'}">
 				<ul class="uk-navbar-nav uk-hidden-small">
-					<li class="uk-active"><a href="index.html">Главная</a></li>
-					<li><a href="about.html">О нас</a></li>
-					<li><a href="online-booking.html">Онлайн бронирование</a></li>
-					<li><a href="promotions.html">Спецпредложения</a></li>
-					<li><a href="visas.html">Визы</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
+					<?php $menu=wp_get_nav_menu_items('main');
+					foreach ($menu as $key=>$value):?>
+					<li <?php if ($obj->ID==$value->object_id&&($obj->post_type==$value->object||$obj->taxonomy==$value->object)) echo 'class="uk-active"';?>><a href="<?=$value->url?>"><?=$value->title?></a></li>
+					<?php endforeach; ?>
 				</ul>
 				<a href="#my-id" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 			</nav>
@@ -45,12 +44,10 @@
 			<div id="my-id" class="uk-offcanvas">
 				<div class="uk-offcanvas-bar">
 					<ul class="uk-nav uk-nav-offcanvas" data-uk-scrollspy-nav="{closest:'li', topoffset:-200}">
-						<li class="uk-active"><a href="index.html">Главная</a></li>
-						<li><a href="about.html">О нас</a></li>
-						<li><a href="online-booking.html">Онлайн бронирование</a></li>
-						<li><a href="promotions.html">Спецпредложения</a></li>
-						<li><a href="visas.html">Визы</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
+						<?php $menu=wp_get_nav_menu_items('main');
+						foreach ($menu as $key=>$value):?>
+							<li <?php if ($obj->ID==$value->object_id&&($obj->post_type==$value->object||$obj->taxonomy==$value->object)) echo 'class="uk-active"';?>><a href="<?=$value->url?>"><?=$value->title?></a></li>
+						<?php endforeach; ?>
 					</ul>
 				</div>
 			</div>
