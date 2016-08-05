@@ -1,5 +1,8 @@
 <!--НАЧАЛО main-section-->
 <div class="main-section" style="background-image: url('<?=get_the_post_thumbnail_url()?>')">
+	<div id="aweb-widget-search-container" data-domainname="daphne.onlineota.com" data-target="_self" data-version="null">
+	</div>
+
 	<div class="content-area">
 		<img class="heading-img" src="<?php bloginfo('template_directory') ?>/public/img/icon-plane.png">
 		<?php the_content() ?>
@@ -78,6 +81,7 @@
 	<?php wp_reset_query(); ?>
 </div>
 <!--КОНЕЦ promotions-->
+
 
 <!--НАЧАЛО reviews-->
 <div class="reviews">

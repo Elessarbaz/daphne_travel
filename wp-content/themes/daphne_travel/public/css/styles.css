@@ -12,6 +12,59 @@
   src: url("../fonts/CenturyGothic/CenturyGothic.woff") format("truetype");
   font-weight: normal; }
 /* КОНЕЦ подключаем шрифт "Century Gothic" */
+#aweb-widget-search-container {
+  display: inline-block; }
+
+#aweb-search-panel label span {
+  padding: 0 12px;
+  background: transparent;
+  font-size: 14px;
+  border-radius: 3px; }
+
+#aweb-search-panel .aweb-direction label {
+  background: rgba(0, 82, 75, 0.1) !important;
+  color: #fff; }
+  #aweb-search-panel .aweb-direction label span {
+    color: #000; }
+
+#aweb-search-panel .aweb-direction label.uk-active {
+  background: rgba(0, 82, 75, 0.5) !important; }
+  #aweb-search-panel .aweb-direction label.uk-active span {
+    color: #fff; }
+
+.aweb-btn {
+  background-color: #00524b !important;
+  text-transform: capitalize; }
+
+.aweb-pax-select,
+.aweb-datepicker,
+.aweb-autocomplete {
+  display: block;
+  margin: 2px auto !important;
+  background: white;
+  border: 1px solid black !important; }
+
+#aweb-search-panel {
+  background: rgba(255, 255, 255, 0.7) !important; }
+  @media screen and (min-width: 360px) {
+    #aweb-search-panel {
+      margin: 15px 0 0 30px; } }
+  @media screen and (min-width: 375px) {
+    #aweb-search-panel {
+      margin: 15px 0 0 38px; } }
+  @media screen and (min-width: 412px) {
+    #aweb-search-panel {
+      margin: 15px 0 0 55px; } }
+  @media screen and (min-width: 768px) {
+    #aweb-search-panel {
+      margin: 15px 0 0 30px; } }
+
+.aweb-label {
+  text-transform: capitalize; }
+
+.ui-button-text {
+  text-transform: capitalize; }
+
 body {
   font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;

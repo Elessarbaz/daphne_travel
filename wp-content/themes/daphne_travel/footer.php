@@ -25,7 +25,7 @@
 		</div>
 	</div>
 </footer>
-
+<script src="<?php bloginfo('template_directory') ?>/public/js/widget-core.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/js/jquery-2.2.3.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/js/uikit.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/js/components/sticky.min.js"></script>
@@ -36,7 +36,7 @@
 	$('a[data-country]').click(function () {
 		var country=$(this).data('country');
 		$("#country").val(country);
-	})
+	});
 </script>
 </body>
 </html>
