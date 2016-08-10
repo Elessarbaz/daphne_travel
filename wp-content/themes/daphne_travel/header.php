@@ -17,11 +17,11 @@
 <header id="home">
 	<div class="uk-container uk-container-center">
 		<a href="/"><img src="<?=get_field('logo-header',4)?>" alt="Лого" class="header__logo"></a>
-		<p class="language-switcher">
+		<!--<p class="language-switcher">
 			<a href="" class="active">RU</a>
 			<a href="">EN</a>
 			<a href="">TR</a>
-		</p>
+		</p>-->
 		<div class="navbar-and-contacts-col">
 			<div class="contacts">
 				<span><a href="tel:<?=get_field('phone-1',4)?>"><?=get_field('phone-1',4)?></a></span>
