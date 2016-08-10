@@ -44,7 +44,7 @@
 				<button class="uk-button uk-hidden-large" data-uk-modal="{target:'#modal-service'}">Узнать подробнее?</button>
 			</div>
 			<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2">
-				<h3>Название предложения</h3>
+				<h3><?=get_the_title()?></h3>
 				<article>
 					<?php the_content() ?>
 				</article>

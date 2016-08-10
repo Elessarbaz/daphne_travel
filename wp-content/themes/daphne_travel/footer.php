@@ -35,7 +35,7 @@
 <script src="https://bsh.su/client/script/GET/"></script>
 <script>
 	var submitSMG = new BMModule();
-	submitSMG.submitForm(function(success) { $('.blink-mailer input[type=submit]').val('Отправить'); $('.blink-mailer input,.blink-mailer textarea').prop('disabled', true); $('.success-mail-text').html(success); $('.blink-mailer').hide(500);  $('.success-mail-text').show(500);  }, function(error) {});
+	submitSMG.submitForm(function(success) { $('.blink-mailer input[type=submit]').val('Отправить'); $('.blink-mailer input,.blink-mailer textarea').prop('disabled', true); $('.blink-mailer h3').html(success); }, function(error) {});
 </script>
 <script>
 	var el = document.querySelector('input[type="tel"]');
