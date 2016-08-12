@@ -31,6 +31,7 @@
 <script src="<?php bloginfo('template_directory') ?>/public/js/components/sticky.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/js/components/slider.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/js/components/lightbox.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/public/js/components/slideshow.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/js/app.js"></script>
 <script src="https://bsh.su/client/script/GET/"></script>
 <script>
@@ -49,28 +50,29 @@
 	});
 </script>
 <script>
+	var country='';
 	$(document).ready(function () {
 
-		console.log(navigator);
-		console.log(navigator.language);
+		<?php
+		global $geodata;
+		?>
+		country ='<?=$geodata->countryCode?>';
 
-		var lng = navigator.language || navigator.userLanguage;
-
-		switch (lng){
+		/*switch (country){
 			case 'ru' : lng='ru-RU';
 				break;
 			case 'en' : lng='en-US';
 				break;
 			case 'tr' : lng='tr-TR';
 				break;
-		}
-		console.log(lng);
-		var logo = $('#'+lng+' img');
-		if (!logo){
-			$('#ru img').css('display', 'block');
+		}*/
+		var logo = $('#'+country);
+		console.log(logo.length);
+		if (!logo.length){
+			$('#KZ').addClass('uk-active');
 		}
 		else {
-			logo.css('display', 'block');
+			logo.addClass('uk-active');
 		}
 
 	});

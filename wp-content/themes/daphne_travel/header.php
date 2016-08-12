@@ -11,20 +11,32 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/public/css/components/slider.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/public/css/components/slidenav.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/public/css/styles.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/public/css/components/slideshow.min.css">
 </head>
 <body>
 
 <header id="home">
 	<div class="uk-container uk-container-center">
-		<a id="ru-RU" href="/"><img src="<?=get_field('logo-ru',4)?>" alt="Лого" class="header__logo"></a>
-		<a id="en-US" href="/"><img src="<?=get_field('logo-en',4)?>" alt="Лого" class="header__logo"></a>
-		<a id="tr-TR" href="/"><img src="<?=get_field('logo-tr',4)?>" alt="Лого" class="header__logo"></a>
+		<div class="uk-grid">
+		<div class="uk-slidenav-position uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-5" data-uk-slideshow="{autoplay: true}">
+			<ul class="uk-slideshow">
+				<li id="KZ" class="uk-active" >
+					<div class="header__logo" style="background-image: url('<?=get_field('logo-ru',4)?>')" ></div>
+				</li>
+				<li id="TR">
+					<div class="header__logo" style="background-image: url('<?=get_field('logo-tr',4)?>')" ></div>
+				</li>
+				<li id="US">
+					<div class="header__logo" style="background-image: url('<?=get_field('logo-en',4)?>')" ></div>
+				</li>
+			</ul>
+		</div>
 		<!--<p class="language-switcher">
 			<a href="" class="active">RU</a>
 			<a href="">EN</a>
 			<a href="">TR</a>
 		</p>-->
-		<div class="navbar-and-contacts-col">
+		<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-4-5 navbar-and-contacts-col">
 			<div class="contacts">
 				<span><a href="tel:<?=get_field('phone-1',4)?>"><?=get_field('phone-1',4)?></a></span>
 				<span><a href="tel:<?=get_field('phone-2',4)?>"><?=get_field('phone-2',4)?></a></span>
@@ -53,7 +65,8 @@
 					</ul>
 				</div>
 			</div>
-
 		</div>
+	</div>
+	</div>
 	</div>
 </header>

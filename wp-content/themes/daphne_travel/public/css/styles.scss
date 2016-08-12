@@ -151,6 +151,17 @@ img.heading-img {
 /* КОНЕЦ ОБЩИЕ СТИЛИ */
 
 
+.header__logo {
+  padding-top: 50%;
+  width: 100%;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-image: url('http://daphne.blink.kz/wp-content/uploads/2016/08/logo-1.png');
+  background-repeat: no-repeat;
+
+
+}
+
 /* НАЧАЛО header */
 header {
   background-color: #efefef;
@@ -161,17 +172,6 @@ header {
     background: 50% 100%/auto url("../img/background-plaster.jpg") repeat-x;
   }
 
-  .header__logo {
-    margin: 0 auto;
-    display: none;
-    padding: 10px;
-    max-width: 175px;
-    box-sizing: content-box;
-
-    @media (min-width: 1220px) {
-      float: left;
-    }
-  }
 
   .language-switcher {
     margin: 0;

@@ -138,3 +138,12 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function GetLocation($ip)
+{
+    header('Content-Type: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8');
+    $url = 'http://ip-api.com/json/'.$ip;
+    return file_get_contents($url);
+}
+global $geodata;
+$geodata=json_decode(GetLocation($_SERVER['REMOTE_ADDR']));
