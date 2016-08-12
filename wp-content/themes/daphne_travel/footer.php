@@ -50,7 +50,21 @@
 </script>
 <script>
 	$(document).ready(function () {
+
+		console.log(navigator);
+		console.log(navigator.language);
+
 		var lng = navigator.language || navigator.userLanguage;
+
+		switch (lng){
+			case 'ru' : lng='ru-RU';
+				break;
+			case 'en' : lng='en-US';
+				break;
+			case 'tr' : lng='tr-TR';
+				break;
+		}
+		console.log(lng);
 		var logo = $('#'+lng+' img');
 		if (!logo){
 			$('#ru img').css('display', 'block');
@@ -58,6 +72,7 @@
 		else {
 			logo.css('display', 'block');
 		}
+
 	});
 </script>
 <?=get_field('google',4) ?>
