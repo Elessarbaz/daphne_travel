@@ -48,6 +48,18 @@
 		$("#country").val(country);
 	});
 </script>
+<script>
+	$(document).ready(function () {
+		var lng = navigator.language || navigator.userLanguage;
+		var logo = $('#'+lng+' img');
+		if (!logo){
+			$('#ru img').css('display', 'block');
+		}
+		else {
+			logo.css('display', 'block');
+		}
+	});
+</script>
 <?=get_field('google',4) ?>
 <?=get_field('yandex',4) ?>
 <?php wp_footer(); ?>

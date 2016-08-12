@@ -16,7 +16,9 @@
 
 <header id="home">
 	<div class="uk-container uk-container-center">
-		<a href="/"><img src="<?=get_field('logo-header',4)?>" alt="Лого" class="header__logo"></a>
+		<a id="ru" href="/"><img src="<?=get_field('logo-ru',4)?>" alt="Лого" class="header__logo"></a>
+		<a id="en" href="/"><img src="<?=get_field('logo-en',4)?>" alt="Лого" class="header__logo"></a>
+		<a id="tr" href="/"><img src="<?=get_field('logo-tr',4)?>" alt="Лого" class="header__logo"></a>
 		<!--<p class="language-switcher">
 			<a href="" class="active">RU</a>
 			<a href="">EN</a>
