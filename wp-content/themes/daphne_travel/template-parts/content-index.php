@@ -1,13 +1,26 @@
 <!--НАЧАЛО main-section-->
-<div class="main-section" style="background-image: url('<?=get_the_post_thumbnail_url()?>')">
-	<div id="aweb-widget-search-container" data-domainname="daphne.onlineota.com" data-target="_self" data-version="null">
-	</div>
 
-	<div class="content-area">
-		<img class="heading-img" src="<?php bloginfo('template_directory') ?>/public/img/icon-plane.png">
-		<?php the_content() ?>
-	</div>
+<div class="uk-slidenav-position" data-uk-slideshow>
+	<ul class="uk-slideshow">
+		<?php foreach (pp_gallery_get() as $image): ?>
+		<li>
+			<div class="main-section" style="background-image: url('<?=$image->url?>')">
+				<div id="aweb-widget-search-container" data-domainname="daphne.onlineota.com" data-target="_self" data-version="null">
+				</div>
+
+				<div class="content-area">
+					<img class="heading-img" src="<?php bloginfo('template_directory') ?>/public/img/icon-plane.png">
+					<?php the_content() ?>
+				</div>
+			</div>
+		</li>
+		<?php endforeach; ?>
+	</ul>
+	<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+	<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
 </div>
+
+
 <!--КОНЕЦ main-section-->
 
 <!--НАЧАЛО advantages-->
