@@ -3,7 +3,7 @@
 <div class="main-section" style="background-image: url('<?=get_the_post_thumbnail_url()?>')">
 	<div class="content-area">
 		<img class="heading-img" src="<?php bloginfo('template_directory') ?>/public/img/icon-plane.png">
-		<h2>Туры</h2>
+		<h2><?=get_the_title()?></h2>
 	</div>
 </div>
 <!--КОНЕЦ main-section-->
@@ -28,6 +28,7 @@
 			<form class="blink-mailer uk-container uk-container-center uk-text-center uk-flex uk-flex-center uk-flex-middle uk-flex-column" action="">
 				<h3>Свяжитесь с нами для получения <br> подробной информации</h3>
 				<input name="title" type="hidden" value="Обратная связь">
+				<input name="Название тура" type="hidden" value="<?=get_the_title()?>">
 				<input placeholder="Имя" name="Имя" type="text">
 				<input placeholder="Email" name="Email" type="email">
 				<input placeholder="Телефон" name="Телефон" type="tel">
