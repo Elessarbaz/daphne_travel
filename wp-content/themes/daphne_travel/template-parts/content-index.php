@@ -38,9 +38,9 @@
 						<div>
 							<img src="<?=get_the_post_thumbnail_url()?>">
 							<h3><?=get_the_title()?></h3>
-							<p>
-								<?php the_content()?>
-							</p>
+							<article>
+								<?php the_content('Подробнее...')?>
+							</article>
 						</div>
 					</li>
 					<?php endforeach; wp_reset_query(); ?>
