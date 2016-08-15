@@ -147,3 +147,19 @@ function GetLocation($ip)
 }
 global $geodata;
 $geodata=json_decode(GetLocation($_SERVER['REMOTE_ADDR']));
+
+add_filter( 'archive_template', create_function('$the_template','
+	$cat_name=get_the_category();
+	$cat_name=$cat_name[0];
+	$file="archive-".$cat_name->slug;
+	$file_else="archive";
+	if ( file_exists(TEMPLATEPATH . "/".$file.".php") )
+	{
+		return TEMPLATEPATH . "/".$file.".php";
+	}
+	else
+	{
+		return TEMPLATEPATH . "/".$file_else.".php";
+	}
+	return TEMPLATEPATH . "/".$file_else.".php";
+') ) ;
