@@ -36,7 +36,7 @@
 					?>
 					<li>
 						<div>
-							<img src="<?=get_the_post_thumbnail_url()?>">
+							<img src="<?=get_field('icon')?>">
 							<h3><?=get_the_title()?></h3>
 							<article>
 								<?php the_content('Подробнее...')?>

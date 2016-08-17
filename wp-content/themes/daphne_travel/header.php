@@ -21,21 +21,16 @@
 		<div class="uk-slidenav-position uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-5" data-uk-slideshow="{autoplay: true}">
 			<ul class="uk-slideshow">
 				<li id="KZ" class="uk-active" >
-					<div class="header__logo" style="background-image: url('<?=get_field('logo-ru',4)?>')" ></div>
+					<a href="/"><div class="header__logo" style="background-image: url('<?=get_field('logo-ru',4)?>')" ></div></a>
 				</li>
 				<li id="TR">
-					<div class="header__logo" style="background-image: url('<?=get_field('logo-tr',4)?>')" ></div>
+					<a href="/"><div class="header__logo" style="background-image: url('<?=get_field('logo-tr',4)?>')" ></div></a>
 				</li>
 				<li id="US">
-					<div class="header__logo" style="background-image: url('<?=get_field('logo-en',4)?>')" ></div>
+					<a href="/"><div class="header__logo" style="background-image: url('<?=get_field('logo-en',4)?>')" ></div></a>
 				</li>
 			</ul>
 		</div>
-		<!--<p class="language-switcher">
-			<a href="" class="active">RU</a>
-			<a href="">EN</a>
-			<a href="">TR</a>
-		</p>-->
 		<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-4-5 navbar-and-contacts-col">
 			<div class="contacts">
 				<span><a href="tel:<?=get_field('phone-1',4)?>"><?=get_field('phone-1',4)?></a></span>
