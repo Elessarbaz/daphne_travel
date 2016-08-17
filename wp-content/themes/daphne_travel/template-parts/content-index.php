@@ -77,7 +77,7 @@
 	<div class="uk-container uk-container-center">
 		<h2>Спецпредложения</h2>
 		<div class="uk-grid" >
-			<?php $post=array('category_name'=>'promotionmain','numberposts'=> 4); setup_postdata($post); ?>
+			<?php $posts=array('category_name'=>'promotionmain','numberposts'=> 3); ?>
 			<?php foreach($posts as $post){ setup_postdata($post); ?>
 				<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-4">
 					<div class="promotions-single-block-main">
