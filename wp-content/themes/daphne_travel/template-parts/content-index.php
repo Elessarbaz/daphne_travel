@@ -112,8 +112,11 @@
 						<div>
 							<h3><?=get_the_title()?></h3>
 							<p>
-								<?php the_content()?>
+								<?php $content = get_the_content();
+                                    echo mb_substr($content,0,256);
+                                ?>
 							</p>
+                            <a href="#<?php the_ID()?>" data-uk-modal>Подробнее</a>
 						</div>
 					</li>
 					<?php endforeach; wp_reset_query(); ?>
@@ -124,4 +127,20 @@
 		</div>
 	</div>
 </div>
+
+<?php $posts=get_posts(array('category_name'=>'reviews','numberposts'=>-1));
+foreach ($posts as $post): setup_postdata($post);
+    ?>
+    <div id="<?php the_ID()?>" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <h3 class="uk-text-large"><?php the_title()?></h3>
+            <article>
+                <?php the_content()?>
+            </article>
+        </div>
+    </div>
+<?php endforeach; wp_reset_query(); ?>
+
+
 <!--КОНЕЦ reviews-->
