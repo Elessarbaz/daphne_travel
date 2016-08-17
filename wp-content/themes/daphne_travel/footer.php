@@ -18,6 +18,7 @@
 				<p>
 					<?=get_field('raspisanie',4);?>
 				</p>
+				<img style="width: 20%;" src="<?=get_field('logo-footer-2',4)?>">
 			</div>
 			<div class="uk-width-medium-6-10">
 				<?=get_field('map',4)?>

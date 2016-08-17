@@ -1,6 +1,6 @@
 <!--НАЧАЛО main-section-->
 
-<div class="uk-slidenav-position" data-uk-slideshow>
+<div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true}">
 	<ul class="uk-slideshow">
 		<?php foreach (pp_gallery_get() as $image): ?>
 		<li>
