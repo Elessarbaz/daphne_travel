@@ -5,8 +5,6 @@
 		<?php foreach (pp_gallery_get() as $image): ?>
 		<li>
 			<div class="main-section" style="background-image: url('<?=$image->url?>')">
-				<div id="aweb-widget-search-container" data-domainname="daphne.onlineota.com" data-target="_self" data-version="null">
-				</div>
 
 				<div class="content-area">
 					<img class="heading-img" src="<?php bloginfo('template_directory') ?>/public/img/icon-plane.png">
@@ -16,6 +14,8 @@
 		</li>
 		<?php endforeach; ?>
 	</ul>
+	<div class="form-abs" id="aweb-widget-search-container" data-domainname="daphne.onlineota.com" data-target="_self" data-version="null">
+	</div>
 	<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
 	<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
 </div>
@@ -72,23 +72,25 @@
 </div>
 <!--КОНЕЦ about-->
 
-<!--НАЧАЛО promotions-->
-<?php $post=get_post(37); setup_postdata($post); ?>
-<div class="promotions">
-	<style>
-		@media (min-width: 768px) {
-			.promotions {
-				text-align: left;
-				background: linear-gradient(115deg, white 0%, white 40%, transparent 40%, transparent 100%), 50% 50%/cover url('<?=get_the_post_thumbnail_url()?>'); } }
-	</style>
+
+<div class="promotions" style="background: transparent">
 	<div class="uk-container uk-container-center">
-		<div class="content-box">
-			<h2><?=get_the_title()?></h2>
-			<img class="heading-img" src="<?php bloginfo('template_directory') ?>/public/img/icon-maleta.png">
-			<article>
-				<?php the_content() ?>
-			</article>
-			<a href="#" class="btn">Подробнее</a>
+		<h2>Спецпредложения</h2>
+		<div class="uk-grid" >
+			<?php $post=array('category_name'=>'promotion','numberposts'=> 4); setup_postdata($post); ?>
+			<?php foreach($posts as $post){ setup_postdata($post); ?>
+				<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-4">
+					<div class="promotions-single-block-main">
+						<div class="promotions-backimage" style="background-image: url(<?php the_post_thumbnail_url()?>)"></div>
+						<h3><?php the_title()?></h3>
+						<article class="article-p">
+							<?php the_content('')?>
+						</article>
+						<a class="link-p" href="<?php the_permalink()?>">Подробнее</a>
+					</div>
+				</div>
+			<?php }
+			wp_reset_postdata(); ?>
 		</div>
 	</div>
 	<?php wp_reset_query(); ?>

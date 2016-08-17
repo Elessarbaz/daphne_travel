@@ -334,7 +334,7 @@ footer {
     font-size: 48px; }
   @media (min-width: 768px) {
     .promotions .content-box {
-      max-width: 300px; } }
+      max-width: 200px; } }
 
 /* КОНЕЦ promotions */
 /* НАЧАЛО reviews */
@@ -458,5 +458,37 @@ footer {
 *******************************/
 .contacts h3 {
   margin-top: 5px; }
+
+.tour-catalog img {
+  box-shadow: 6px 7px 30px #4b4e37; }
+
+.promotions-single-block-main {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20%; }
+  .promotions-single-block-main p {
+    margin-bottom: 0 !important; }
+  .promotions-single-block-main .promotions-backimage {
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 60%; }
+  .promotions-single-block-main h3 {
+    text-align: center;
+    font-size: 22px; }
+  .promotions-single-block-main a.link-p {
+    padding: 5px 15px;
+    background: #0096ac;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute; }
+
+.form-abs {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

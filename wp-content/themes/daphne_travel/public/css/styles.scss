@@ -447,7 +447,7 @@ footer {
   }
   .content-box {
     @media (min-width: 768px) {
-      max-width: 300px;
+      max-width: 200px;
     }
   }
 }
@@ -632,4 +632,45 @@ footer {
   h3{
     margin-top: 5px;
   }
+}
+
+.tour-catalog{
+  img{
+    box-shadow: 6px 7px 30px #4b4e37;
+  }
+}
+
+.promotions-single-block-main{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20%;
+  p{
+    margin-bottom: 0 !important;
+  }
+  .promotions-backimage{
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 60%;
+  }
+  h3{
+    text-align: center;
+    font-size: 22px;
+  }
+  a.link-p{
+    padding: 5px 15px;
+    background: #0096ac;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.form-abs{
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
