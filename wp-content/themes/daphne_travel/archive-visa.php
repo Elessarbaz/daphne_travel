@@ -9,7 +9,7 @@
 $obj=get_queried_object();
 $query_url=$_SERVER['REDIRECT_URL'];
 $post=count(get_posts(array('category_name'=>$obj->slug,'posts_per_page'=>-1)));
-$page_post=get_option('posts_per_page');
+$page_post=-1;//get_option('posts_per_page');
 $page_count=ceil($post/$page_post);
 $page_num=(int)get_query_var('page');
 $offset=$page_num*$page_post;
