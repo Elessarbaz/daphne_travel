@@ -647,6 +647,9 @@ footer {
   text-align: center;
   position: relative;
   padding-bottom: 20%;
+
+  box-sizing: border-box;
+  height: 100%;
   p{
     margin-bottom: 0 !important;
   }

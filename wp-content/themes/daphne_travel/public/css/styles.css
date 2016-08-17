@@ -468,7 +468,9 @@ footer {
   padding-right: 10px;
   text-align: center;
   position: relative;
-  padding-bottom: 20%; }
+  padding-bottom: 20%;
+  box-sizing: border-box;
+  height: 100%; }
   .promotions-single-block-main p {
     margin-bottom: 0 !important; }
   .promotions-single-block-main .promotions-backimage {
