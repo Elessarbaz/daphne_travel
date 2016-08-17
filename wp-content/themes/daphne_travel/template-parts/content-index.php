@@ -77,7 +77,7 @@
 	<div class="uk-container uk-container-center">
 		<h2>Спецпредложения</h2>
 		<div class="uk-grid" >
-			<?php $posts=array('category_name'=>'promotionmain','numberposts'=> 3); ?>
+			<?php $posts=get_posts(array('category_name'=>'promotionmain','numberposts'=> 4)); ?>
 			<?php foreach($posts as $post){ setup_postdata($post); ?>
 				<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-4">
 					<div class="promotions-single-block-main">
@@ -89,8 +89,7 @@
 						<a class="link-p" href="<?php the_permalink()?>">Подробнее</a>
 					</div>
 				</div>
-			<?php }
-			wp_reset_postdata(); ?>
+			<?php } ?>
 		</div>
 	</div>
 	<?php wp_reset_query(); ?>
