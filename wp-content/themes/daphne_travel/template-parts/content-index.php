@@ -1,6 +1,6 @@
 <!--НАЧАЛО main-section-->
 
-<div class="uk-slidenav-position" data-uk-slideshow>
+<div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true}">
 	<ul class="uk-slideshow">
 		<?php foreach (pp_gallery_get() as $image): ?>
 		<li>
@@ -77,7 +77,7 @@
 	<div class="uk-container uk-container-center">
 		<h2>Спецпредложения</h2>
 		<div class="uk-grid" >
-			<?php $posts=array('category_name'=>'promotionmain','numberposts'=> 3); ?>
+			<?php $posts=get_posts(array('category_name'=>'promotionmain','numberposts'=> 4)); ?>
 			<?php foreach($posts as $post){ setup_postdata($post); ?>
 				<div class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-4">
 					<div class="promotions-single-block-main">
@@ -89,8 +89,7 @@
 						<a class="link-p" href="<?php the_permalink()?>">Подробнее</a>
 					</div>
 				</div>
-			<?php }
-			wp_reset_postdata(); ?>
+			<?php } ?>
 		</div>
 	</div>
 	<?php wp_reset_query(); ?>
@@ -113,8 +112,11 @@
 						<div>
 							<h3><?=get_the_title()?></h3>
 							<p>
-								<?php the_content()?>
+								<?php $content = get_the_content();
+                                    echo mb_substr($content,0,256);
+                                ?>
 							</p>
+                            <a href="#<?php the_ID()?>" data-uk-modal>Подробнее</a>
 						</div>
 					</li>
 					<?php endforeach; wp_reset_query(); ?>
@@ -125,4 +127,20 @@
 		</div>
 	</div>
 </div>
+
+<?php $posts=get_posts(array('category_name'=>'reviews','numberposts'=>-1));
+foreach ($posts as $post): setup_postdata($post);
+    ?>
+    <div id="<?php the_ID()?>" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <h3 class="uk-text-large"><?php the_title()?></h3>
+            <article>
+                <?php the_content()?>
+            </article>
+        </div>
+    </div>
+<?php endforeach; wp_reset_query(); ?>
+
+
 <!--КОНЕЦ reviews-->
