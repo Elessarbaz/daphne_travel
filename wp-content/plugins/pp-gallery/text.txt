@@ -1,1 +1,1 @@
-/home/serg/site/daphne_travel//wp-content/uploads/pp_gallery/64/Ukraine.png
+/var/www/vhosts/daphnetravel.com/httpdocs//wp-content/uploads/pp_gallery/4/для-фона-5.jpg

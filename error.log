@@ -1,0 +1,41 @@
+[Mon Aug 01 17:00:09.792123 2016] [:error] [pid 26321] [client 127.0.0.1:60116] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/serg/site/daphne_travel/wp-content/themes/daphne_travel/single.php on line 19, referer: http://daphne_travel.tes/category/promotions/
+[Mon Aug 01 17:00:09.792173 2016] [:error] [pid 26321] [client 127.0.0.1:60116] PHP Stack trace:, referer: http://daphne_travel.tes/category/promotions/
+[Mon Aug 01 17:00:09.792192 2016] [:error] [pid 26321] [client 127.0.0.1:60116] PHP   1. {main}() /home/serg/site/daphne_travel/index.php:0, referer: http://daphne_travel.tes/category/promotions/
+[Mon Aug 01 17:00:09.792198 2016] [:error] [pid 26321] [client 127.0.0.1:60116] PHP   2. require() /home/serg/site/daphne_travel/index.php:17, referer: http://daphne_travel.tes/category/promotions/
+[Mon Aug 01 17:00:09.792202 2016] [:error] [pid 26321] [client 127.0.0.1:60116] PHP   3. require_once() /home/serg/site/daphne_travel/wp-blog-header.php:19, referer: http://daphne_travel.tes/category/promotions/
+[Mon Aug 01 17:57:35.754833 2016] [:error] [pid 30375] [client 127.0.0.1:34832] PHP Fatal error:  Cannot use object of type WP_Post as array in /home/serg/site/daphne_travel/wp-includes/query.php on line 3920
+[Mon Aug 01 17:57:35.754870 2016] [:error] [pid 30375] [client 127.0.0.1:34832] PHP Stack trace:
+[Mon Aug 01 17:57:35.754881 2016] [:error] [pid 30375] [client 127.0.0.1:34832] PHP   1. {main}() /home/serg/site/daphne_travel/index.php:0
+[Mon Aug 01 17:57:35.754889 2016] [:error] [pid 30375] [client 127.0.0.1:34832] PHP   2. require() /home/serg/site/daphne_travel/index.php:17
+[Mon Aug 01 17:57:35.754896 2016] [:error] [pid 30375] [client 127.0.0.1:34832] PHP   3. require_once() /home/serg/site/daphne_travel/wp-blog-header.php:19
+[Mon Aug 01 17:57:35.754912 2016] [:error] [pid 30375] [client 127.0.0.1:34832] PHP   4. include() /home/serg/site/daphne_travel/wp-includes/template-loader.php:75
+[Mon Aug 01 17:57:35.754919 2016] [:error] [pid 30375] [client 127.0.0.1:34832] PHP   5. have_posts() /home/serg/site/daphne_travel/wp-content/themes/daphne_travel/page.php:27
+[Mon Aug 01 17:57:35.754926 2016] [:error] [pid 30375] [client 127.0.0.1:34832] PHP   6. WP_Query->have_posts() /home/serg/site/daphne_travel/wp-includes/query.php:762
+[Mon Aug 01 17:57:35.754932 2016] [:error] [pid 30375] [client 127.0.0.1:34832] PHP   7. WP_Query->rewind_posts() /home/serg/site/daphne_travel/wp-includes/query.php:3904
+[Mon Aug 01 17:58:35.214448 2016] [:error] [pid 30142] [client 127.0.0.1:34865] PHP Fatal error:  Cannot use object of type WP_Post as array in /home/serg/site/daphne_travel/wp-includes/query.php on line 3920
+[Mon Aug 01 17:58:35.214487 2016] [:error] [pid 30142] [client 127.0.0.1:34865] PHP Stack trace:
+[Mon Aug 01 17:58:35.214499 2016] [:error] [pid 30142] [client 127.0.0.1:34865] PHP   1. {main}() /home/serg/site/daphne_travel/index.php:0
+[Mon Aug 01 17:58:35.214507 2016] [:error] [pid 30142] [client 127.0.0.1:34865] PHP   2. require() /home/serg/site/daphne_travel/index.php:17
+[Mon Aug 01 17:58:35.214514 2016] [:error] [pid 30142] [client 127.0.0.1:34865] PHP   3. require_once() /home/serg/site/daphne_travel/wp-blog-header.php:19
+[Mon Aug 01 17:58:35.214520 2016] [:error] [pid 30142] [client 127.0.0.1:34865] PHP   4. include() /home/serg/site/daphne_travel/wp-includes/template-loader.php:75
+[Mon Aug 01 17:58:35.214527 2016] [:error] [pid 30142] [client 127.0.0.1:34865] PHP   5. have_posts() /home/serg/site/daphne_travel/wp-content/themes/daphne_travel/page.php:27
+[Mon Aug 01 17:58:35.214533 2016] [:error] [pid 30142] [client 127.0.0.1:34865] PHP   6. WP_Query->have_posts() /home/serg/site/daphne_travel/wp-includes/query.php:762
+[Mon Aug 01 17:58:35.214540 2016] [:error] [pid 30142] [client 127.0.0.1:34865] PHP   7. WP_Query->rewind_posts() /home/serg/site/daphne_travel/wp-includes/query.php:3904
+[Mon Aug 01 17:59:56.012852 2016] [:error] [pid 30100] [client 127.0.0.1:34907] PHP Fatal error:  Cannot use object of type WP_Post as array in /home/serg/site/daphne_travel/wp-includes/query.php on line 3920
+[Mon Aug 01 17:59:56.012899 2016] [:error] [pid 30100] [client 127.0.0.1:34907] PHP Stack trace:
+[Mon Aug 01 17:59:56.012919 2016] [:error] [pid 30100] [client 127.0.0.1:34907] PHP   1. {main}() /home/serg/site/daphne_travel/index.php:0
+[Mon Aug 01 17:59:56.012926 2016] [:error] [pid 30100] [client 127.0.0.1:34907] PHP   2. require() /home/serg/site/daphne_travel/index.php:17
+[Mon Aug 01 17:59:56.012933 2016] [:error] [pid 30100] [client 127.0.0.1:34907] PHP   3. require_once() /home/serg/site/daphne_travel/wp-blog-header.php:19
+[Mon Aug 01 17:59:56.012939 2016] [:error] [pid 30100] [client 127.0.0.1:34907] PHP   4. include() /home/serg/site/daphne_travel/wp-includes/template-loader.php:75
+[Mon Aug 01 17:59:56.012946 2016] [:error] [pid 30100] [client 127.0.0.1:34907] PHP   5. have_posts() /home/serg/site/daphne_travel/wp-content/themes/daphne_travel/page.php:27
+[Mon Aug 01 17:59:56.012954 2016] [:error] [pid 30100] [client 127.0.0.1:34907] PHP   6. WP_Query->have_posts() /home/serg/site/daphne_travel/wp-includes/query.php:762
+[Mon Aug 01 17:59:56.012958 2016] [:error] [pid 30100] [client 127.0.0.1:34907] PHP   7. WP_Query->rewind_posts() /home/serg/site/daphne_travel/wp-includes/query.php:3904
+[Mon Aug 01 18:00:32.406843 2016] [:error] [pid 30281] [client 127.0.0.1:34933] PHP Fatal error:  Cannot use object of type WP_Post as array in /home/serg/site/daphne_travel/wp-includes/query.php on line 3920
+[Mon Aug 01 18:00:32.406882 2016] [:error] [pid 30281] [client 127.0.0.1:34933] PHP Stack trace:
+[Mon Aug 01 18:00:32.406894 2016] [:error] [pid 30281] [client 127.0.0.1:34933] PHP   1. {main}() /home/serg/site/daphne_travel/index.php:0
+[Mon Aug 01 18:00:32.406902 2016] [:error] [pid 30281] [client 127.0.0.1:34933] PHP   2. require() /home/serg/site/daphne_travel/index.php:17
+[Mon Aug 01 18:00:32.406909 2016] [:error] [pid 30281] [client 127.0.0.1:34933] PHP   3. require_once() /home/serg/site/daphne_travel/wp-blog-header.php:19
+[Mon Aug 01 18:00:32.406915 2016] [:error] [pid 30281] [client 127.0.0.1:34933] PHP   4. include() /home/serg/site/daphne_travel/wp-includes/template-loader.php:75
+[Mon Aug 01 18:00:32.406921 2016] [:error] [pid 30281] [client 127.0.0.1:34933] PHP   5. have_posts() /home/serg/site/daphne_travel/wp-content/themes/daphne_travel/page.php:27
+[Mon Aug 01 18:00:32.406928 2016] [:error] [pid 30281] [client 127.0.0.1:34933] PHP   6. WP_Query->have_posts() /home/serg/site/daphne_travel/wp-includes/query.php:762
+[Mon Aug 01 18:00:32.406934 2016] [:error] [pid 30281] [client 127.0.0.1:34933] PHP   7. WP_Query->rewind_posts() /home/serg/site/daphne_travel/wp-includes/query.php:3904

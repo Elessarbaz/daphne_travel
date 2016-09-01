@@ -18,7 +18,7 @@
 <header id="home">
 	<div class="uk-container uk-container-center">
 		<div class="uk-grid">
-		<div class="uk-slidenav-position uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-5" data-uk-slideshow="{autoplay: true}">
+		<div class="logo-slider uk-slidenav-position uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-5" data-uk-slideshow="{autoplay: true}">
 			<ul class="uk-slideshow">
 				<li id="KZ" class="uk-active" >
 					<a href="/"><div class="header__logo" style="background-image: url('<?=get_field('logo-ru',4)?>')" ></div></a>
@@ -39,8 +39,7 @@
 				<span><a href="mailto:<?=get_field('email-2',4)?>"><?=get_field('email-2',4)?></a></span>
 			</div>
 
-			<nav class="uk-navbar"
-				 data-uk-sticky="{getWidthFrom:'.main-section', top:-200, animation: 'uk-animation-slide-top'}">
+			<nav class="uk-navbar">
 				<ul class="uk-navbar-nav uk-hidden-small">
 					<?php $menu=wp_get_nav_menu_items('main');
 					foreach ($menu as $key=>$value):?>
