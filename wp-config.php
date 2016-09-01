@@ -20,17 +20,17 @@
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define('DB_NAME', 'daphnetr_db');
+define('DB_NAME', 't2rcom_daphne');
 
 /** Имя пользователя MySQL */
-define('DB_USER', 'daphn_user');
+define('DB_USER', 't2rcom_user');
 //Daphne_admin
 //Вфзрту№1Егкшыешсуылщу"Фпутыемщ
 /** Пароль к базе данных MySQL */
 define('DB_PASSWORD', '9Qr1f*q8');
 
 /** Имя сервера MySQL */
-define('DB_HOST', 'srv-pleskdb15.ps.kz:3306');
+define('DB_HOST', 'localhost');
 
 /** Кодировка базы данных для создания таблиц. */
 define('DB_CHARSET', 'utf8');
